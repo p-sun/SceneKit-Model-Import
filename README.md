@@ -3,9 +3,12 @@ A small demo showing how to add 3D models (.dae, .blend, .scn) in SceneKit for g
 
 ## Where to find 3D models
 You can find free VR/Low-poly models at
-[cgtrader](https://www.cgtrader.com/free-3d-models?polygons=lt_5k&low_poly=1)
-[Google Poly](https://poly.google.com/)
-[TurboSquid](https://www.turbosquid.com/Search/3D-Models/free)
+
+- [cgtrader](https://www.cgtrader.com/free-3d-models?polygons=lt_5k&low_poly=1)
+
+- [Google Poly](https://poly.google.com/)
+
+- [TurboSquid](https://www.turbosquid.com/Search/3D-Models/free)
 
 ## How to Import
 
