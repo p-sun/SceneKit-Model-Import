@@ -1,5 +1,5 @@
 # SceneKit-Model-Import
-A small demo showing how to add 3D models (.dae &amp; .scn) in SceneKit for games or AR.
+A small demo showing how to add 3D models (.dae, .blend, .scn) in SceneKit for games or AR.
 
 ## Where to find 3D models
 You can find free VR/Low-poly models at
