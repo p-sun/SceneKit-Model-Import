@@ -20,9 +20,19 @@ You can find free VR/Low-poly models at
 - Add a the model as an SCNNode to your scene.
 
 ```swift
-let potionsRoot = nodeFromResource(assetName: "potions/vzor", extensionName: "dae")
+let potionsRoot = rootNodeFromResource(assetName: "potions/vzor", extensionName: "dae")
 let potionNode = potionsRoot.childNode(withName: "small_health_poti_blue", recursively: true)!
 scene.rootNode.addChildNode(potionNode)
+
+
+func rootNodeFromResource(assetName: String, extensionName: String) -> SCNNode {
+let url = Bundle.main.url(forResource: "art.scnassets/\(assetName)", withExtension: extensionName)!
+let node = SCNReferenceNode(url: url)!
+
+node.name = assetName
+node.load()
+return node
+}
 ```
 ![textureFix]
 
