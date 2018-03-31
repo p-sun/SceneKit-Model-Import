@@ -19,7 +19,7 @@ You can find free VR/Low-poly models at
 - If there are textures, click the .dae scene, find the model you want, and select the texture image in the diffuse section of the model.
 - Add a the model as an SCNNode to your scene.
 
-```swift4
+```swift
 let potionsRoot = nodeFromResource(assetName: "potions/vzor", extensionName: "dae")
 let potionNode = potionsRoot.childNode(withName: "small_health_poti_blue", recursively: true)!
 scene.rootNode.addChildNode(potionNode)
