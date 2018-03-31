@@ -4,8 +4,8 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2018-03-31T20:33:23Z</created>
-  <modified>2018-03-31T20:33:23Z</modified>
+  <created>2018-03-31T20:46:54Z</created>
+  <modified>2018-03-31T20:46:54Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Z_UP</up_axis>
  </asset>
@@ -122,6 +122,29 @@
       <falloffExponent>1</falloffExponent>
       <innerAngle>0</innerAngle>
      </spotParameters>
+    </technique>
+   </extra>
+  </light>
+  <light id="directional" name="directional">
+   <technique_common>
+    <directional>
+     <color>1 1 1</color>
+    </directional>
+   </technique_common>
+   <extra>
+    <technique profile="SceneKit">
+     <attenuationStart>0</attenuationStart>
+     <attenuationEnd>0</attenuationEnd>
+     <attenuationFalloffExponent>2</attenuationFalloffExponent>
+     <intensity>400</intensity>
+     <shadow>
+      <enable>0</enable>
+      <color>0 0 0 1</color>
+      <shadowRadius>3</shadowRadius>
+      <zNear>1</zNear>
+      <zFar>100</zFar>
+      <orthographicScale>1</orthographicScale>
+     </shadow>
     </technique>
    </extra>
   </light>
@@ -2725,7 +2748,7 @@
     </instance_geometry>
    </node>
    <node id="Elixir_Of0" name="Elixir_Of0">
-    <matrix>0.001 0 0 0 0 0.001 0 0 0 0 0.001 0 0 0 0 1 </matrix>
+    <matrix>0.001 0 0 -0.4124015 0 0.001 0 -0.1929147 0 0 0.001 0 0 0 0 1 </matrix>
     <instance_geometry url="#geometry8">
      <bind_material>
       <technique_common>
@@ -2746,7 +2769,7 @@
     </instance_geometry>
    </node>
    <node id="Shield" name="Shield">
-    <matrix>0.001 0 0 -0.4820609 0 0.001 0 -0.3717806 0 0 0.001 0 0 0 0 1 </matrix>
+    <matrix>0.001 0 0 -1.295174 0 0.001 0 -0.3717806 0 0 0.001 0 0 0 0 1 </matrix>
     <instance_geometry url="#geometry19">
      <bind_material>
       <technique_common>
@@ -3197,12 +3220,16 @@
     <instance_light url="#omni"/>
    </node>
    <node id="node253" name="spot">
-    <matrix>0.5295276 0 0.8482573 0.3293798 0 0.9999703 0 -0.571322 -0.8482573 0 0.5295276 0.6853129 0 0 0 1 </matrix>
+    <matrix>0.4969858 -0.3135466 0.8090547 0.3006216 0.3450805 0.9268825 0.1472405 -0.5713218 -0.7961282 0.2060231 0.5688764 0.7313808 0 0 0 1 </matrix>
     <instance_light url="#spot"/>
    </node>
    <node id="node254" name="spot">
     <matrix>0.5764948 -0.2000696 0.7921629 0.4150905 2.235059e-08 0.969525 0.2448542 -0.0573207 -0.8170378 -0.1411674 0.5589432 0.7120365 0 0 0 1 </matrix>
     <instance_light url="#light1"/>
+   </node>
+   <node id="node255" name="directional">
+    <matrix>0.4407125 -0.5115653 -0.7374302 -1.449694 2.979817e-08 0.8215588 -0.5699018 -1.161752 0.897493 0.2512033 0.3621139 -0.009513749 0 0 0 1 </matrix>
+    <instance_light url="#directional"/>
    </node>
   </visual_scene>
  </library_visual_scenes>
