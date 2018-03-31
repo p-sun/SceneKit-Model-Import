@@ -24,6 +24,6 @@ let potionsRoot = nodeFromResource(assetName: "potions/vzor", extensionName: "da
 let potionNode = potionsRoot.childNode(withName: "small_health_poti_blue", recursively: true)!
 scene.rootNode.addChildNode(potionNode)
 ```
-![Texture][textureFix]
+![textureFix]
 
 [textureFix]: https://github.com/p-sun/SceneKit-Model-Import/blob/master/Images/fix_dae_textures.png
