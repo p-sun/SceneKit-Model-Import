@@ -120,7 +120,7 @@ class GameViewController: UIViewController {
                 SCNTransaction.commit()
             }
             
-            material.emission.contents = UIColor.red
+            material.emission.contents = UIColor.blue
             
             SCNTransaction.commit()
         }
