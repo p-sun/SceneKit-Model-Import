@@ -10,8 +10,6 @@ import UIKit
 import ARKit
 
 class StereoViewController: UIViewController {
-    let rightARView = ARSCNView()
-    let leftView = SCNView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +45,7 @@ class StereoViewController: UIViewController {
         mainScene.rootNode.addChildNode(ship)
         
         // Create an ARKit view for the right eye
+        let rightARView = ARSCNView()
         rightARView.scene = mainScene
         rightARView.scene.background.contents = UIImage(named: "skymap")
         rightARView.showsStatistics = true
@@ -55,6 +54,7 @@ class StereoViewController: UIViewController {
         // rightARView.debugOptions = [.showFeaturePoints, .showWorldOrigin]
         
         // Create a scene view for the left eye
+        let leftView = SCNView()
         leftView.scene = rightARView.scene
         leftView.showsStatistics = true
         leftView.isPlaying = true
@@ -78,8 +78,8 @@ class StereoViewController: UIViewController {
         let leftEyeCamera = SCNCamera()
         leftEyeCamera.zFar = rightEyeCamera.zFar
         leftEyeCamera.zNear = rightEyeCamera.zNear
-        leftEyeCamera.fieldOfView = rightEyeCamera.fieldOfView
-        leftEyeCamera.projectionDirection = rightEyeCamera.projectionDirection
+        leftEyeCamera.fieldOfView = 50 //rightEyeCamera.fieldOfView
+        leftEyeCamera.projectionDirection =  .horizontal// rightEyeCamera.projectionDirection
 
         // Create a node to hold the leftEyeCamera
         let leftCameraPov = SCNNode()
