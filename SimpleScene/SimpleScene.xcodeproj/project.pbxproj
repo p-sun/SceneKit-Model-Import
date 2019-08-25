@@ -13,6 +13,7 @@
 		8505B4FE206FDF2B004D4FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8505B4FC206FDF2B004D4FDF /* Main.storyboard */; };
 		8505B500206FDF2D004D4FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8505B4FF206FDF2D004D4FDF /* Assets.xcassets */; };
 		8505B503206FDF2D004D4FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8505B501206FDF2D004D4FDF /* LaunchScreen.storyboard */; };
+		9B2E1EF12311D3E800461026 /* StereoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E1EF02311D3E800461026 /* StereoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8505B4FF206FDF2D004D4FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8505B502206FDF2D004D4FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8505B504206FDF2D004D4FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B2E1EF02311D3E800461026 /* StereoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StereoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8505B4F6206FDF2B004D4FDF /* AppDelegate.swift */,
 				8505B4F8206FDF2B004D4FDF /* art.scnassets */,
 				8505B4FA206FDF2B004D4FDF /* GameViewController.swift */,
+				9B2E1EF02311D3E800461026 /* StereoViewController.swift */,
 				8505B4FC206FDF2B004D4FDF /* Main.storyboard */,
 				8505B4FF206FDF2D004D4FDF /* Assets.xcassets */,
 				8505B501206FDF2D004D4FDF /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2E1EF12311D3E800461026 /* StereoViewController.swift in Sources */,
 				8505B4FB206FDF2B004D4FDF /* GameViewController.swift in Sources */,
 				8505B4F7206FDF2B004D4FDF /* AppDelegate.swift in Sources */,
 			);
